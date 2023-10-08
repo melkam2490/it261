@@ -26,8 +26,10 @@
     </nav>
     <main>
         <h2> About Melkam <h2> 
+       <p>  Paragraph about Myself</p>
         <img class=" right"src="images/mete.jpg" alt="mete">
-        <p>
+        
+        <!-- <p>
        My name is Melkam Worku who IT student originally from Ethiopia,relocated to the United States three years ago. 
       Born and raised in Ethiopia, Melkam completed her high school education in her home country before moved in the USA.
     </p>
@@ -41,7 +43,7 @@
       <p> Looking toward the future, I aspires to leverage my skills and knowledge gained as an IT student to make a positive impact in the industry. 
         She envisions myself working in a dynamic and innovative environment where I can contribute to solving complex technological challenges.
          With her determination, adaptability, and passion for technology, Melkam is poised to thrive and excel in her chosen field. </p>
-         <img class=" right"src="images/Me.png" alt="ME">
+         <img class=" right"src="images/Me.png" alt="ME"> -->
          <h3>My ClasWork Exercise<h3>
           <h4>Week 2</h>
          <ul>
@@ -128,7 +130,7 @@
 
   
  
-  -->
+  
     
   
 </body>
