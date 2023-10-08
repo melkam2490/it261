@@ -1,0 +1,91 @@
+/* *{ */
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     */
+    /* margin-left: 2px; */
+    
+/* }
+body{
+    background-color:rosybrown;
+} */
+/* #wrapper{
+    max-width: 1100;
+    margin: 20px auto;
+    margin-left: 0px;
+    margin-right: 30;
+} */
+/* nav{
+    height: 30px;
+    background-color: aqua;
+    line-height:50px;
+
+} */
+/* nav li{float: left;
+    width:16.66% ;
+    text-align: center;
+    list-style-type: none;
+     */
+
+/* 
+}
+main{
+    width: 62%;
+    float: left;
+}
+aside{
+    width: 35%;
+    float: right;
+    background-color: aquamarine;
+/* } */
+/* .right{
+    float: right;
+    margin-left: 80px;
+}
+nav a{color: blue;
+    text-decoration:none;
+ */
+/* 
+} */
+/*   */
+ /* main p{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}  */ 
+
+/* typography */
+/* h1{
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+h2{
+    
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+main h2,aside h2{
+    text-align: left;
+
+} */
+
+/* 
+footer {height: 50px;
+    background-color:#ddd;
+    clear: both;
+    text-align: center; */
+/* 
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+/*    
+} */
+/* footer li{
+    justify-content: center;
+   margin: 0 15px;
+    
+   list-style-type: none;
+} */ 
