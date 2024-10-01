@@ -38,7 +38,9 @@
             <ol>
                 <li><a href="weeks/week2/var.php">var.php</a></li>
                 <li><a href="weeks/week2/var2.php">var2.php</a></li>
-                <li><a href="var3.php">var3.php</a></li>
+                <li><a href="weeks/week2/currency.php">currency</a></li>
+                <li><a href="weeks/week2/currency-logic.php">currency-logic</a></li>
+                
                 <li><a href="something.php">Something</a></li> <!-- Corrected link text -->
                 <li><a href="something-else.php">Something Else</a></li> <!-- Suggested a more descriptive link -->
             </ol>
