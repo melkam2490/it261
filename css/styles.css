@@ -7,7 +7,7 @@
 
 /* Body */
 body {
-    background: lemonchiffon;
+    background: lavenderblush;
     font-family: Arial, sans-serif;
 }
 
@@ -20,9 +20,10 @@ body {
 /* Navigation */
 nav {
     height: 60px;
-    background: lightseagreen;
-    line-height: 50px;
+    background:darkslategray;
+    line-height: 60px; /* Vertically centers the text */
 }
+
 
 nav ul {
     padding: 0;
@@ -53,6 +54,10 @@ aside {
     width: 32%;
     float: right;
 }
+ol li a {
+    text-decoration: none;
+}
+
 
 /* Image */
 .right {
@@ -60,6 +65,17 @@ aside {
     margin-left: 30px;
     max-width: 100%;
 }
+.me {
+    background: red;                /* Background color */
+    display: flex;                  /* Use flexbox for centering */
+    justify-content: center;        /* Center the image horizontally */
+    align-items: center;            /* Center the image vertically */
+    height: 300px;                  /* Set a fixed height for the hero section */
+    width: 600px;                   /* Set a fixed width for the hero section */
+    overflow: hidden; 
+                  /
+}
+
 
 /* Typography */
 h1 {

@@ -13,9 +13,11 @@ body {
 
 /* Header */
 header {
- 
-  background:blue; 
+  background: darkslategray; 
   padding: 5px 0;
+  height: 70px;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 .inner-header {
@@ -51,11 +53,9 @@ nav a {
   max-width: 1200px;
   margin: 20px auto;
   clear: both;
-  overflow: hidden;
 }
 
 /* Hero section */
-
 #hero {
   background: red;                /* Background color */
   display: flex;                  /* Use flexbox for centering */
@@ -63,8 +63,7 @@ nav a {
   align-items: center;            /* Center the image vertically */
   height: 300px;                  /* Set a fixed height for the hero section */
   width: 600px;                   /* Set a fixed width for the hero section */
-  overflow: hidden; 
-                /* Hide any overflow from the image */
+  overflow: hidden;               /* Hide any overflow from the image */
 }
 
 #hero img {
@@ -72,8 +71,6 @@ nav a {
   height: 100%;                   /* Make the image fill the container height */
   object-fit: cover;              /* Cover the container without distorting the aspect ratio */
 }
-
-
 
 /* Main content */
 main {
@@ -83,6 +80,7 @@ main {
   padding: 20px;
   margin-bottom: 20px;
   margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Aside section */
@@ -112,7 +110,7 @@ footer li {
   margin: 0 15px;
 }
 
-/* Image styling 
+/* Image styling */
 img {
   max-width: 100%;
 }
