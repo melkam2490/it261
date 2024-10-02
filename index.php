@@ -98,6 +98,8 @@
             </ol>
         </aside>
         <img class="me" src="images/22.jpg" alt=" Melkam">
+        <br>
+        <img class="me" src="images/test.png" alt=" Melkam">
     </div>
     <!-- end wrapper -->
    

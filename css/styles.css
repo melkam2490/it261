@@ -73,9 +73,18 @@ ol li a {
     height: 300px;                  /* Set a fixed height for the hero section */
     width: 600px;                   /* Set a fixed width for the hero section */
     overflow: hidden; 
+
                   /
 }
-
+.test{
+    background: red;                /* Background color */
+    display: flex;                  /* Use flexbox for centering */
+    justify-content: center;        /* Center the image horizontally */
+    align-items: center;            /* Center the image vertically */             /* Set a fixed width for the hero section */
+    overflow: hidden; 
+    height: 100px;                  /* Set a fixed height for the hero section */
+    width: 100px;  
+}
 
 /* Typography */
 h1 {
