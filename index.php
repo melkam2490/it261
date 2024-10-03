@@ -41,13 +41,14 @@
                 <li><a href="weeks/week2/var2.php">var2.php</a></li>
                 <li><a href="weeks/week2/currency.php">currency</a></li>
                 <li><a href="weeks/week2/currency-logic.php">currency-logic</a></li>
+                <li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
                 
             
             </ol>
             <br>
             <h3>Week3</h3>
             <ol>
-                <li><a href="weeks/week2/var.php">if.php</a></li>
+                <li><a href="weeks/week3/if.php">if.php</a></li>
                 <li><a href="weeks/week2/var2.php">foreach.php</a></li>
                 <li><a href="weeks/week2/currency.php">forloop.php</a></li>
                 <li><a href="weeks/week2/currency-logic.php">date.php</a></li>
