@@ -49,7 +49,7 @@
             <h3>Week3</h3>
             <ol>
                 <li><a href="weeks/week3/if.php">if.php</a></li>
-                <li><a href="weeks/week2/var2.php">foreach.php</a></li>
+                <li><a href="weeks/week3/date.php">date.php</a></li>
                 <li><a href="weeks/week2/currency.php">forloop.php</a></li>
                 <li><a href="weeks/week2/currency-logic.php">date.php</a></li>
                 <li><a href="something.php">Swich.php</a></li> <!-- Corrected link text -->
@@ -100,7 +100,7 @@
         </aside>
         <img class="me" src="images/22.jpg" alt=" Melkam">
         <br>
-        <img class="me" src="images/test.png" alt=" Melkam">
+        <img class="me" src="images/test2.png" alt=" Melkam">
     </div>
     <!-- end wrapper -->
    
