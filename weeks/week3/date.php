@@ -20,20 +20,20 @@ echo $our_time= date('H:i a ');
 
 if($our_time <=11){
 echo '<h2 style"color:yellow">Good Morning '.$name.'</h2>';
-echo '<img src="Mornig.jpeg" alt="sun">';
+echo '<img src="/.images/Mornig.jpeg" alt="sun">';
 
 
 }
 elseif($our_time <=17){
     echo '<h2 style="color:green">Good Afternoon, ' . $name . '</h2>';
-    echo '<img src="afternoon.jpeg" alt="sun">';
+    echo '<img src="./images/afternoon.jpeg" alt="sun">';
 
 
 }
 
 else{
-echo '<h2 style= "color:green">Good Evning ,'.$name.'</h2>';
-echo '<img src="evening.jpeg" alt="sun">';
+echo '<h2 style= "color:green">Good Evning, '.$name.'</h2>';
+echo '<img src="./images/evening.jpeg" alt="sun">';
 echo '<p>It is time to sleep!!</p>';
 
 

@@ -50,7 +50,7 @@
             <ol>
                 <li><a href="weeks/week3/if.php">if.php</a></li>
                 <li><a href="weeks/week3/date.php">date.php</a></li>
-                <li><a href="weeks/week2/currency.php">forloop.php</a></li>
+                <li><a href="weeks/week3/for-each.php">for-each.php</a></li>
                 <li><a href="weeks/week2/currency-logic.php">date.php</a></li>
                 <li><a href="something.php">Swich.php</a></li> <!-- Corrected link text -->
                 
