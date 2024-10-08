@@ -55,12 +55,12 @@ $total = $quantity * $product;
 $total *= 1.097;
 echo $total;
 echo '<br>';
-echo '<h4>We Would like our amout to reflect 2 decimal places---- We are thinking about flats and a new function - - number_format()</h34';
+echo '<h3>We Would like our amount  to reflect 2 decimal places---- We are thinking about flats and a new function - - number_format()</h3';
 echo '<br>';
 $product = 120;// is our integer.
 $quantity = 5;
 $total = $quantity * $product;
-$total *= 1.105;
+$total *= 1.097;
 $total_freindly = number_format($total, 2);
 echo $total_freindly;
 echo '<br>';

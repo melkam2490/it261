@@ -29,7 +29,7 @@
         <main>
             <h2>About Melkam</h2>
             <img class="right" src="images/melka.jpg" alt="Photo of Melkam">
-            <p>My goal is to become a skilled full-stack developer, mastering both front-end and back-end technologies to build meaningful, user-friendly applications. I’m passionate about solving problems through code and continuously expanding my knowledge in web development. Outside of technology, I love nature and enjoy spending time outdoors, whether it's hiking or simply relaxing by the water. Nature brings me a sense of peace and balance, fueling my creativity and motivation to achieve my goals..</p>
+            <p>My goal is to become a skilled full-stack developer, mastering both front-end and back-end technologies to build meaningful, user-friendly applications. I’m passionate about solving problems through code and continuously expanding my knowledge in web development. Outside of technology, I love nature and enjoy spending time outdoors, whether it's hiking or simply relaxing by the water. Nature brings me a sense of peace and balance, fueling my creativity and motivation to achieve my goals.</p>
  
         </main>
 
@@ -51,6 +51,9 @@
                 <li><a href="weeks/week3/if.php">if.php</a></li>
                 <li><a href="weeks/week3/date.php">date.php</a></li>
                 <li><a href="weeks/week3/for-each.php">for-each.php</a></li>
+                <li><a href="weeks/week3/index.php">index.php</a></li>
+                <li><a href="weeks/week3/about.php">about.php</a></li>
+                <li><a href="weeks/week3/for-loop.php">for-loop.php</a></li>
                 <li><a href="weeks/week2/currency-logic.php">date.php</a></li>
                 <li><a href="something.php">Swich.php</a></li> <!-- Corrected link text -->
                 

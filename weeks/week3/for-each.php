@@ -2,7 +2,7 @@
 echo date('Y');
 // Our wine list, it should be an array of wines
 
-echo '<h2>This will be the Wine List</h2>';
+echo '<h2>This will be the Wine List only a key</h2>';
 // we have only the key
 $wine = [
     'Chardonnay',
@@ -22,7 +22,7 @@ foreach($wine as $key){
 echo '</ul>';
 
 '<br>';
-echo '<h2>Moveis and show liste</h2>';
+echo '<h2>Moveis and show liste which will have both a key and a value</h2>';
 // here we have a key and the value
 $shows=[
 'Apple TV' => 'Severance',
@@ -39,8 +39,24 @@ $shows=[
 
 echo '<ul>';
 foreach($shows as $key => $value){
-    echo '<li><b>'.$key.'</b></li>';
+    echo '<li><b>'.$key.'</b>: '.$value.'</li>';
 }
 echo '</ul>';
 
-?>
+
+'<br>';
+echo '<h2>Time To our navagation that will again have both a key and a value!</h2>';
+$nav = array(
+    'index.php' => 'Home',
+    'about.php' => 'About',
+    'dayily.php' => 'Daily',
+    'project.php' => 'Project',
+    'contact.php' => 'Contact',
+    'gallary.php' => 'Galary',
+);
+
+echo '<ul>';
+foreach($nav as $key => $value){
+    echo '<li><a href=" '. $key .' "> '. $value .'</a> </li>';
+}
+echo '</ul>';
