@@ -54,8 +54,10 @@
                 <li><a href="weeks/week3/index.php">index.php</a></li>
                 <li><a href="weeks/week3/about.php">about.php</a></li>
                 <li><a href="weeks/week3/for-loop.php">for-loop.php</a></li>
+                <li><a href="weeks/week3/switch.php">switch.php</a></li>
+                
                 <li><a href="weeks/week2/currency-logic.php">date.php</a></li>
-                <li><a href="something.php">Swich.php</a></li> <!-- Corrected link text -->
+> <!-- Corrected link text -->
                 
             </ol>
             <br>
