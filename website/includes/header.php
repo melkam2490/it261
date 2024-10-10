@@ -52,13 +52,14 @@ switch(THIS_PAGE) {
 
     case 'Sunday':
       $songTitle = "Easy Like Sunday";
-      $artist = "Ella Rivers"; // New artist for Sunday
-      $pic = "elaa.jpeg"; // Image file name for Sunday
+      $artist = "Ella Rivers"; 
+      $pic = "elaa.jpeg";
       $alt = "Relaxed Sunday Vibes";
       $lyrics = "<p>Kick back, unwind, let the day drift by, it's easy like Sunday, just you and the sky.</p>";
       $content = "<p>Let Ella Rivers' soothing voice set the perfect tone for a calm, peaceful Sunday.</p>";
       $body= "Sunday";
       $background="background";
+      
      
       break;
   
@@ -66,7 +67,7 @@ switch(THIS_PAGE) {
       case 'Monday':
       $songTitle = "Happy";
       $artist = "Pharrell Williams";
-      $pic = "Ph.jpeg";
+      $pic = "22.jpeg";
       $alt = "Happy Monday";
       $lyrics = "<p>Because I'm happy, clap along if you feel like a room without a roof.</p>";
       $content = "<p>Start your week on a positive note with Pharrell's infectious energy!</p>";
@@ -89,7 +90,7 @@ switch(THIS_PAGE) {
         case 'Wednesday':
           $songTitle = "Hump Day";
           $artist = "Kool & The Gang";
-          $pic = "cl1.jpeg"; 
+          $pic = "33.jpeg"; 
           $alt = "Hump Day";
           $lyrics = "<p> It's Wednesday, let's get together,<br> 
                      Celebrate the week, no matter the weather!</p>";
@@ -115,6 +116,7 @@ switch(THIS_PAGE) {
           $lyrics = "<p> It's Friday, Friday, gotta get down on Friday,<br>
                      Everybody's looking forward to the weekend, weekend!</p>";
           $content = "<p>Join in the fun with Rebecca Black's viral anthem!</p>";
+          $body= "monday";
           break;
           case 'Saturday':
             $songTitle = "Saturday Sun";
@@ -128,7 +130,6 @@ switch(THIS_PAGE) {
             break;
       
     
-
   }
 ?>
 <!DOCTYPE html>
@@ -136,10 +137,10 @@ switch(THIS_PAGE) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title; ?></title> <!-- Corrected echo here -->
+    <title><?php echo isset($title) ? $title : 'Default Title'; ?></title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
-<body class="<?php echo $body; ?>"> <!-- Corrected echo here -->
+<body class="<?php echo $body; ?>"> 
   <header>
     <div class="inner-header">
       <a href="index.php">

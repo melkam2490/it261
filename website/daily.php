@@ -11,35 +11,78 @@ include('./includes/header.php');
 </main>
 
 <aside>
-    <h2>Checkout Daily Specials</h2> 
-    <ul style="list-style-type: none;">
-        <li>
-            <a style="color:<?php echo ($today == 'Sunday') ? 'Green' : 'violet'; ?>; text-decoration:none;" href="daily.php?today=Sunday">Sunday</a>
-        </li>
-        <li>
-            <a style="color:<?php echo ($today == 'Monday') ? 'red' : 'orange'; ?>; text-decoration:none;" href="daily.php?today=Monday">Monday</a>
-        </li>
-        <li>
-            <a style="color:<?php echo ($today == 'Tuesday') ? 'brown' : ''; ?>; text-decoration:none;" href="daily.php?today=Tuesday">Tuesday</a>
-        </li>
-        <li>
-            <a style="color:<?php echo ($today == 'Wednesday') ? 'green' : 'purple'; ?>; text-decoration:none;" href="daily.php?today=Wednesday">Wednesday</a>
-        </li>
-        <li>
-            <a style="color:<?php echo ($today == 'Thursday') ? 'green' : 'purple'; ?>; text-decoration:none;" href="daily.php?today=Thursday">Thursday</a>
-        </li>
-        <li>
-            <a style="color:<?php echo ($today == 'Friday') ? 'orange' : 'hotpink'; ?>; text-decoration:none;" href="daily.php?today=Friday">Friday</a>
-        </li>
-        <li>
-            <a style="color:<?php echo ($today == 'Saturday') ? '#722F37' : 'aqua'; ?>; text-decoration:none;" href="daily.php?today=Saturday">Saturday</a>
-        </li>
-    </ul>
+<h2>Checkout Daily Specials</h2> 
+<ul style="list-style-type: none; padding-left: 0; margin-left: 0;">
+    <li>
+        <a style="color:<?php 
+            if ($today == 'Sunday') {
+                echo 'green';
+            } else {
+                echo 'violet';
+            }
+        ?>; text-decoration:none;" href="daily.php?today=Sunday">Sunday</a>
+    </li>
+    <li>
+        <a style="color:<?php 
+            if ($today == 'Monday') {
+                echo 'red';
+            } else {
+                echo 'orange';
+            }
+        ?>; text-decoration:none;" href="daily.php?today=Monday">Monday</a>
+    </li>
+    <li>
+        <a style="color:<?php 
+            if ($today == 'Tuesday') {
+                echo 'brown';
+            } else {
+                echo 'inherit';
+            }
+        ?>; text-decoration:none;" href="daily.php?today=Tuesday">Tuesday</a>
+    </li>
+    <li>
+        <a style="color:<?php 
+            if ($today == 'Wednesday') {
+                echo 'green';
+            } else {
+                echo 'purple';
+            }
+        ?>; text-decoration:none;" href="daily.php?today=Wednesday">Wednesday</a>
+    </li>
+    <li>
+        <a style="color:<?php 
+            if ($today == 'Thursday') {
+                echo 'green';
+            } else {
+                echo 'purple';
+            }
+        ?>; text-decoration:none;" href="daily.php?today=Thursday">Thursday</a>
+    </li>
+    <li>
+        <a style="color:<?php 
+            if ($today == 'Friday') {
+                echo 'orange';
+            } else {
+                echo 'hotpink';
+            }
+        ?>; text-decoration:none;" href="daily.php?today=Friday">Friday</a>
+    </li>
+    <li>
+        <a style="color:<?php 
+            if ($today == 'Saturday') {
+                echo '#722F37';
+            } else {
+                echo 'aqua';
+            }
+        ?>; text-decoration:none;" href="daily.php?today=Saturday">Saturday</a>
+    </li>
+</ul>
+
+
 </aside>
 
-<!-- Make sure to properly close the wrapper div if it was opened previously -->
 <div>
-    <!-- Your content here -->
+
 </div>
 
 
