@@ -75,7 +75,7 @@ echo date('Y');
 
   <!-- Kilometer to Mileage Table -->
   <h2>Kilometer to Mileage Table</h2>
-  <table>
+  <table border="1">
     <tr>
         <th>Kilometer (km)</th>
         <th>Mileage (miles)</th>
@@ -86,11 +86,12 @@ echo date('Y');
         $miles = $km * 0.621371;
         echo '<tr>';
         echo '<td>' . $km . ' km</td>';
-        echo '<td>' . $miles . ' miles</td>';
+        echo '<td>' . number_format($miles, 2) . ' miles</td>';
         echo '</tr>';
     }
     ?>
-  </table>
+</table>
+
 
   <h2>I completed two separate tables: Celsius/Fahrenheit and Kilometer/Mileage!</h2>
 
