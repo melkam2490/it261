@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto 10px auto; /* Aligns the form to the center */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: calc(100% - 20px); /* Adjusts the width to account for margin and padding */
+  display: block;
+  margin: 0 10px 10px 10px; /* Sets consistent margin all around */
+  height: 30px;
+  padding-left: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+input[type=submit] {
+  width: auto;
+  margin: 0 10px 0 10px; /* Consistent margin on both sides */
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+p {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+  font: 1em sans-serif;
+  margin: 15px 0 0 0; /* Adjusted margin for clarity */
+}
+
+.box {
+  max-width: 400px; /* To match the form width */
+  border: 1px solid green;
+  margin: 20px auto;
+  padding: 10px;
+}

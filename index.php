@@ -64,10 +64,10 @@
 
             <h3>Week4</h3>
             <ol>
-                <li><a href="weeks/week2/var.php">form1.php</a></li>
-                <li><a href="weeks/week2/var2.php">form2.php</a></li>
-                <li><a href="weeks/week2/currency.php">form3.php</a></li>
-                <li><a href="weeks/week2/currency-logic.php">form-artimatic.php</a></li>
+                <li><a href="weeks/week4/form-get.php">form-get.php</a></li>
+                <li><a href="weeks/week4/form1.php">form1.php</a></li>
+                <li><a href="weeks/week4/form2.php">form2.php</a></li>
+                <li><a href="weeks/week4/form3.php">form3.php</a></li>
   
                 
             </ol>
