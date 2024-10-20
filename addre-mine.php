@@ -7,7 +7,7 @@
   <link href="css/adder.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<form action="" method="POST">
+<form action="addre-mine.php" method="POST">
   <fieldset>
     <label>Enter the first number:</label><br>
     <input type="text" name="num1"><br><br>
@@ -18,7 +18,8 @@
 </form>
 
 <p><a href="">Reset</a></p>
-<p><a href="#">HTML validation</a><p>
+
+<p><a href="#" id="html-checker">HTML validation</a></p>
 <script>
         document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + encodeURIComponent(location.href));
         document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
