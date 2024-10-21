@@ -76,7 +76,7 @@
             <br>
             <h3>Week5</h3>
             <ol>
-                <li><a href="weeks/week2/var.php">currency1.php</a></li>
+                <li><a href="weeks/week5/currency1.php">currency1.php</a></li>
                 <li><a href="weeks/week2/var2.php">currency2.php</a></li>
                 <li><a href="weeks/week2/currency.php">currency3.php</a></li>
                 <li><a href="weeks/week2/currency-logic.php">currency4.php</a></li>
