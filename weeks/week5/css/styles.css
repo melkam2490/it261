@@ -35,11 +35,13 @@ input[type=submit] {
   margin-bottom: 10px;
   background-color: blue;
   color: white;
-  border-radius: 50px;
+
   height: 30px;
   width: 20%;
   border: none;
   cursor: pointer;
+  display:block;
+  margin-top: 5px;
 }
 
 form ul{
