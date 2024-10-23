@@ -66,7 +66,8 @@
       }
 
       // If all fields are set and not empty
-      if(isset($_POST['name'], $_POST['email'], $_POST['amount'], $_POST['currency'], $_POST['bank']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['amount']) && !empty($_POST['currency']) && $_POST['bank'] != null) {
+      if(isset($_POST['name'], 
+      $_POST['email'], $_POST['amount'], $_POST['currency'], $_POST['bank']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['amount']) && !empty($_POST['currency']) && $_POST['bank'] != null) {
         $name = $_POST['name'];
         $email = $_POST['email'];
         $amount = $_POST['amount'];
