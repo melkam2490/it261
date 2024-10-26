@@ -83,6 +83,7 @@
                 <li><a href="weeks/week5/calculator1.php">calculator1.php</a></li>
                 <li><a href="weeks/week5/calculator2.php">calculator2.php</a></li>
                 <li><a href="weeks/week5/calculator3.php">calculator3.php</a></li>
+                <li><a href="weeks/week5/currency4.php">currency4.php</a></li>
 
                 
             </ol>
@@ -119,7 +120,7 @@
         <ul>
             <li>Copyright &copy; 2024</li>
             <li>All Rights Reserved</li>
-            <li><a href="http://localhost/it261/index.php">Web Design by YOUR NAME</a></li>
+            <li><a href="http://localhost/it261/index.php">Web Design by Melkam Worku</a></li>
             <li><a id="html-checker" href="#">HTML Validation</a></li>
             <li><a id="css-checker" href="#">CSS Validation</a></li>
         </ul>

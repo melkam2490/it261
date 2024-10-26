@@ -75,3 +75,19 @@ form ul{
   font-style: italic;
   text-align: center;
 }
+.video-container {
+  max-width: 600px;          /* Set a maximum width for the video container */
+  width: 100%;               /* Make it full width */
+  margin: 20px auto;        /* Center the container horizontally */
+  display: flex;             /* Use flexbox to align content */
+  justify-content: center;   /* Center the iframe within the container */
+}
+
+.video-container iframe {
+  width: 100%;               /* Make the iframe responsive */
+  height: 340px;            /* Set a specific height for the video */
+}
+.h{
+  text-align: center;
+}
+

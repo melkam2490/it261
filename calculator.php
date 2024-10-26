@@ -94,5 +94,19 @@
     }
   }
   ?>
+   <footer>
+        <ul>
+            <li>Copyright &copy; 2024</li>
+            <li>All Rights Reserved</li>
+            <li><a href="http://localhost/it261/index.php">Web Design by Melkam Worku</a></li>
+            <li><a id="html-checker" href="#">HTML Validation</a></li>
+            <li><a id="css-checker" href="#">CSS Validation</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + encodeURIComponent(location.href));
+        document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(location.href));
+    </script>
 </body>
 </html>
