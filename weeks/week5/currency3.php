@@ -72,7 +72,8 @@
       $amount = floatval($_POST['amount']);
       $currency = floatval($_POST['currency']);
       $dollars = $amount * $currency;
-      if(!empty($name && $email && $amount && $currency)){
+      // if(!empty($name && $email && $amount && $currency && $bank))
+      if(!empty($name && $email && $amount && $currency && $bank)){
 
         echo '<div class="box">
               <h2> Hello <b>' . $name . ',</b></h2> 

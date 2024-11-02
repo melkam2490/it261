@@ -1,5 +1,7 @@
+
 <?php
-include('./includes/header.php');
+include('./config.php');
+include('./includes/header.php')
 ?>
 <main id="main" style="background-color:#d3d3d3; padding: 20px; margin-left: 20px;"> 
     <h1>Welcome To Our Special Song</h1>

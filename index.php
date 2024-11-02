@@ -90,9 +90,9 @@
             <br>
             <h3>Week6</h3>
             <ol>
-                <li><a href="weeks/week2/var.php">form1.php</a></li>
-                <li><a href="weeks/week2/var2.php">function.php</a></li>
-                <li><a href="weeks/week2/currency.php">impold.php</a></li>
+                <li><a href="weeks/week6/form.php">form.php</a></li>
+                <li><a href="weeks/week6/form2.php">form2.php</a></li>
+                <li><a href="weeks/week6/function.php">function.php</a></li>
                 
             </ol>
             <h3>Week7</h3>
