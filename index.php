@@ -97,9 +97,8 @@
             </ol>
             <h3>Week7</h3>
             <ol>
-                <li><a href="weeks/week2/var.php">picture.php</a></li>
-                <li><a href="weeks/week2/var2.php">random.php.php</a></li>
-                <li><a href="weeks/week2/currency.php">impold.php</a></li>
+                <li><a href="weeks/week7/picture.php">picture.php</a></li>
+                
                 
             </ol>
             <h3>Week8</h3>
