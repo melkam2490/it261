@@ -56,6 +56,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     } else {
         $regions = $_POST['regions'];
     }
+    
+
+    function my_wines($wines) {
+        $my_return = '';
+        if (!empty($wines)) {
+            $my_return = implode(', ', $wines);
+        } else {
+            $wines_err = 'Please fill out your wines';
+        }
+        return $my_return;
+    }
+    
 
     // Validate gender
     if (empty($_POST['gender'])) {
