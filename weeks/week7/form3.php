@@ -1,8 +1,11 @@
-
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 ob_start();
 
-$wines = '';
+$wines = [];
 $first_name = '';
 $last_name = '';
 $email = '';
@@ -109,15 +112,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         $headers = "From: noreply@melkam2490.com\r\n";
 
-        if(mail($to, $subject, $body, $headers)) {
-            echo '<p>Thank you for your submission, ' . htmlspecialchars($first_name) . '!</p>';
+        if (mail($to, $subject, $body, $headers)) {
+            header('Location: thx.php');
+            exit();
         } else {
-            echo '<p>Sorry, there was an issue sending your email. Please try again later.</p>';
+            echo "Failed to send the email.";
         }
     }
 }
-
-ob_end_flush();
 ?>
 
 <!DOCTYPE html>
