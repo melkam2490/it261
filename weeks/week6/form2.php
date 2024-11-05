@@ -1,4 +1,3 @@
-
 <?php
 ob_start();
 
@@ -52,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     // Validate regions
-    if (empty($_POST['regions'])) {
+    if ($_POST['regions']== NULL) {
         $regions_err = 'Please select your region';
     } else {
         $regions = $_POST['regions'];
@@ -68,9 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     // Validate phone
     if (empty($_POST['phone'])) {
         $phone_err = 'Please fill in your phone';
-    } elseif (!preg_match('/^\d{3}-\d{3}-\d{4}$/', $_POST['phone'])) {
-        $phone_err = 'Invalid format. Use xxx-xxx-xxxx.';
-    } else {
+    }  else {
         $phone = $_POST['phone'];
     }
 
@@ -87,14 +84,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     } else {
         $privacy = $_POST['privacy'];
     }
+    $headers = array(
+        'From' => 'noreply@melkam2490@gmail.com'
+    );
 
-    // Function to handle wines
-    function my_wines($wines) {
-        return implode(', ', $wines);
-    }
-
-    // If all fields are filled, send email
-    if (!empty($first_name) && !empty($last_name) && !empty($comments) && !empty($email) && !empty($phone) && !empty($wines) && !empty($regions) && !empty($privacy) && !empty($gender)) {
+    // If all fields we are filled, send email
+    if (!empty($first_name) && 
+    !empty($last_name) && !empty($comments) && 
+    !empty($email) && !empty($phone) && 
+    !empty($wines) && !empty($regions)
+     && !empty($privacy) && 
+     !empty($gender)) {
         $to = 'melkam2490@gmail.com';
         $subject = 'Test email on ' . date('m/d/y, h:i A');
         $body = '
@@ -102,23 +102,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         Last Name: ' . $last_name . PHP_EOL . '
         Email: ' . $email . PHP_EOL . '
         Gender: ' . $gender . PHP_EOL . '
-        Wines: ' . my_wines($wines) . PHP_EOL . '
+        Wines: ' . implode(', ', $wines) . PHP_EOL . '
         Region: ' . $regions . PHP_EOL . '
         Comments: ' . $comments . PHP_EOL . '
         Phone: ' . $phone . PHP_EOL;
 
         $headers = "From: noreply@melkam2490.com\r\n";
 
-        if(mail($to, $subject, $body, $headers)) {
-            echo '<p>Thank you for your submission, ' . htmlspecialchars($first_name) . '!</p>';
-        } else {
-            echo '<p>Sorry, there was an issue sending your email. Please try again later.</p>';
-        }
+        mail($to, $subject, $body, $headers);
+        header('Location:thx.php');
+      
     }
 }
 
 ob_end_flush();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,11 +1,8 @@
+
 <?php
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 ob_start();
 
-$wines = [];
+$wines = '';
 $first_name = '';
 $last_name = '';
 $email = '';
@@ -55,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     // Validate regions
-    if (empty($_POST['regions'])) {
+    if (empty($_POST['regions'] == NULL)) {
         $regions_err = 'Please select your region';
     } else {
         $regions = $_POST['regions'];
@@ -112,14 +109,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         $headers = "From: noreply@melkam2490.com\r\n";
 
-        if (mail($to, $subject, $body, $headers)) {
-            header('Location: thx.php');
-            exit();
+        if(mail($to, $subject, $body, $headers)) {
+            echo '<p>Thank you for your submission, ' . htmlspecialchars($first_name) . '!</p>';
         } else {
-            echo "Failed to send the email.";
+            echo '<p>Sorry, there was an issue sending your email. Please try again later.</p>';
         }
     }
 }
+
+ob_end_flush();
 ?>
 
 <!DOCTYPE html>
