@@ -77,11 +77,23 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     // Validate phone
-    if (empty($_POST['phone'])) {
-        $phone_err = 'Please fill in your phone';
-    }  else {
-        $phone = $_POST['phone'];
-    }
+    // if (empty($_POST['phone'])) {
+    //     $phone_err = 'Please fill in your phone';
+    // }  else {
+    //     $phone = $_POST['phone'];
+    // }
+    //We will be using the preg_match() function - The preg_match()function returns whether a match was found in a string.
+
+    if(empty($_POST['phone'])) { // if empty, type in your number
+      $phone_err = 'Your phone number please!';
+      } elseif(array_key_exists('phone', $_POST)){
+      if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+      { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+      $phone_err = 'Invalid format!';
+      } else{
+      $phone = $_POST['phone'];
+      } // end else
+      } // end main if
 
     // Validate comments
     if (empty($_POST['comments'])) {
@@ -101,12 +113,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     );
 
     // If all fields we are filled, send email
-    if (!empty($first_name) && 
-    !empty($last_name) && !empty($comments) && 
-    !empty($email) && !empty($phone) && 
-    !empty($wines) && !empty($regions)
-     && !empty($privacy) && 
-     !empty($gender)) {
+    if (!empty($first_name && 
+    $last_name && 
+    $comments && 
+    $email && 
+    $wines &&
+    $regions&&
+    $privacy && 
+    $gender)&&
+    preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
         $to = 'melkam2490@gmail.com';
         $subject = 'Test email on ' . date('m/d/y, h:i A');
         $body = '
@@ -140,7 +155,7 @@ ob_end_flush();
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <h1>My First Form In Week6</h1>
+    <h1>Form3 In Week7 Phone validation</h1>
 
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
         <fieldset>
@@ -167,7 +182,7 @@ ob_end_flush();
             <span> <?php echo $gender_err;?></span>
 
             <label>Phone</label>
-            <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxxx" 
+            <input type="tel" name="phone" placeholder="XXX-XXX-XXXX" id="phone" placeholder="xxx-xxx-xxxx" 
                    value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>">
                    <span> <?php echo $phone_err;?></span>
 
