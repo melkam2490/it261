@@ -1,6 +1,6 @@
-<?php
+  <?php
+  ob_start();
 
-ob_start();
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 switch(THIS_PAGE) {
@@ -53,6 +53,7 @@ switch(THIS_PAGE) {
           }
           return $myreturn;
         }
+    
 
   if(isset($_GET['today'])){
     $today=$_GET['today'] ;
@@ -145,9 +146,7 @@ switch(THIS_PAGE) {
     
   }
 
-
-
-$wines = [];
+$movies = '';
 $first_name = '';
 $last_name = '';
 $email = '';
@@ -157,7 +156,7 @@ $phone = '';
 $comments = '';
 $privacy = '';
 
-$wines_err = '';
+$movies_err = '';
 $first_name_err = '';
 $last_name_err = '';
 $email_err = '';
@@ -167,13 +166,12 @@ $phone_err = '';
 $comments_err = '';
 $privacy_err = '';
 
-
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    // Validate wines
-    if (empty($_POST['wines'])) {
-        $wines_err = 'What...no wines?';
+    // Validate movies
+    if (empty($_POST['movies'])) {
+        $movies_err = 'What...no movies?';
     } else {
-        $wines = $_POST['wines'];
+        $movies = $_POST['movies'];
     }
 
     // Validate first name
@@ -211,9 +209,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $gender = $_POST['gender'];
     }
 
-    // Validate phone
+    // Validate phone number
     if (empty($_POST['phone'])) {
-        $phone_err = 'Please fill in your phone';
+        $phone_err = 'Your phone number please!';
+    } elseif (!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
+        $phone_err = 'Invalid format! Use XXX-XXX-XXXX';
     } else {
         $phone = $_POST['phone'];
     }
@@ -232,13 +232,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $privacy = $_POST['privacy'];
     }
 
-    // Function to handle wines
-    function my_wines($wines) {
-        return implode(', ', $wines);
-    }
+    // If no errors, proceed to send the email
+    if (!empty($movies) && !empty($first_name) && !empty($last_name) && !empty($email) &&
+        !empty($regions) && !empty($gender) && !empty($phone) && !empty($comments) && !empty($privacy)) {
 
-    // If all fields are filled, send email
-    if (!empty($first_name) && !empty($last_name) && !empty($comments) && !empty($email) && !empty($phone) && !empty($wines) && !empty($regions) && !empty($privacy)) {
         $to = 'melkam2490@gmail.com';
         $subject = 'Test email on ' . date('m/d/y, h:i A');
         $body = '
@@ -246,19 +243,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         Last Name: ' . $last_name . PHP_EOL . '
         Email: ' . $email . PHP_EOL . '
         Gender: ' . $gender . PHP_EOL . '
-        Wines: ' . my_wines($wines) . PHP_EOL . '
+        Movies: ' . implode(', ', $movies) . PHP_EOL . '
         Region: ' . $regions . PHP_EOL . '
         Comments: ' . $comments . PHP_EOL . '
         Phone: ' . $phone . PHP_EOL;
 
-        $headers = array(
-              'From' => 'noreply@melkam2490.com'
-        );
+        $headers = "From: noreply@melkam2490.com\r\n";
 
         mail($to, $subject, $body, $headers);
-        header('Location: thx.php');
-     
-    }// end set
-} //end server request method
-
-
+        header('Location:thx.php');
+      
+    }
+}
+?>

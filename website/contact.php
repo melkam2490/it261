@@ -1,16 +1,14 @@
 <?php
 // Include configuration and header files
 include('./config.php');
-include('./includes/header.php'); // Ensure header.php exists in the specified path
+include('./includes/header.php'); 
 ?>
   
 <div id="wrapper">
-    <div id="hero">
-        <img src="images/v.jpeg" alt="morning"> <!-- Ensure v.jpeg exists in the images folder -->
-    </div>
+  
     
     <main>
-        <h1>Welcome to our Contact Page!</h1>
+        <h1>Welcome to My Contact Page!</h1>
         <h2>We are going to learn PHP</h2>
         
         <h3>What is Lorem Ipsum?</h3>
@@ -19,7 +17,7 @@ include('./includes/header.php'); // Ensure header.php exists in the specified p
         <h2>Another Headline</h2>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 
-        <?php include('./includes/form.php'); ?> <!-- Ensure form.php exists in the specified path -->
+
     </main>
     
     <aside>

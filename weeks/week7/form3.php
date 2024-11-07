@@ -76,13 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $gender = $_POST['gender'];
     }
 
-    // Validate phone
-    // if (empty($_POST['phone'])) {
-    //     $phone_err = 'Please fill in your phone';
-    // }  else {
-    //     $phone = $_POST['phone'];
-    // }
-    //We will be using the preg_match() function - The preg_match()function returns whether a match was found in a string.
 
     if(empty($_POST['phone'])) { // if empty, type in your number
       $phone_err = 'Your phone number please!';
