@@ -7,30 +7,28 @@ include('./includes/header.php');
 
 <main>
     <?php
-    echo '<h2> We are going to display our image using a random selection!!!</h2>';
+    echo '<h2>We are going to display our image using a random function!!!</h2>';
 
     // Array of photos (image names without extension)
-    $photo1[0] = 'Photo1';
-    $photo2[1] = 'Photo2';
-    $photo3[2] = 'Photo3';
-    $photo4[3] = 'Photo4';
-    $photo5[4] = 'Photo5';
-    $photo6[5] = 'Photo6';
+    $photos = ['Photo1', 'Photo2', 'Photo3', 'Photo4', 'Photo5', 'Photo6'];
 
-    echo '<h2> Let\'s display a random picture</h2>';
+    echo '<h2>Let\'s display a random picture</h2>';
 
     // Function to display a random image
-    function random_images($photo) {
-        $my_return = '';
-        $i = rand(0, 5); // Randomly select an index between 0 and 5
-        $selected_image = $photo[$i] . '.jpeg'; // Append ".jpeg" to the selected image name
-        // Display the image with width and height without 'px'
-        echo '<img src="image/' . $selected_image . '" alt="' . $photo[$i] . '" width="500" height="300">'; 
-        return $my_return;
-    }
+    function random_images($photos) {
+        $my_return ='';
 
-    // Call the function to display the random image
-    echo random_images($photo);
+        $i = rand(0, 5); 
+
+        // Select the random image and append the .jpeg extension
+        $selected_image = $photos[$i] . '.jpeg'; 
+
+
+        $my_return='<img src="image/' . $selected_image . '" alt="' . $photos[$i] . '" width="500" height="300">';
+        return $my_return;
+
+    }
+     echo random_images($photos);
     ?>
 </main>
 

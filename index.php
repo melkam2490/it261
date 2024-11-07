@@ -20,7 +20,7 @@
                 <li><a href="website/daily.php">Switch</a></li>
                 <li><a href="addre-mine.php">Troubleshoot</a></li>
                 <li><a href="calculator.php">Calculator</a></li>
-                <li><a href="website/form.php">Email</a></li>
+                <li><a href="website/contact.php">Email</a></li>
                 <li><a href="#">Database</a></li>
                 <li><a href="#">Gallery</a></li>
             </ul>

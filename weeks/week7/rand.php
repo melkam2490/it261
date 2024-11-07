@@ -40,14 +40,14 @@ $photo[3]='Photo4';
 $photo[4]='Photo5';
 $i=rand(0 ,4);
 $selected_image = $photo[$i] . '.jpg';
-echo '<img src="./images/' . $selected_image . '" alt="' . $photo[$i] . '" width="70%" height="300">';
+echo '<img src="./images2/' . $selected_image . '" alt="' . $photo[$i] . '" width="70%" height="300">';
 
 echo '<h2> let\'s creat a function!!!</h2>';
 function random_images($photo){
   $my_return ='';
   $i=rand(0 ,4);
   $selected_image = $photo[$i] . '.jpg';
-  echo '<img src="./images/' . $selected_image . '" alt="' . $photo[$i] . '" width="70%" height="300">';
+  echo '<img src="./images2/' . $selected_image . '" alt="' . $photo[$i] . '" width="70%" height="300">';
   return $my_return;
 }// end function
  echo random_images($photo);
