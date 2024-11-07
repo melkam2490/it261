@@ -236,7 +236,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     if (!empty($movies) && !empty($first_name) && !empty($last_name) && !empty($email) &&
         !empty($regions) && !empty($gender) && !empty($phone) && !empty($comments) && !empty($privacy)) {
 
-        $to = 'melkam2490@gmail.com';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'Test email on ' . date('m/d/y, h:i A');
         $body = '
         First Name: ' . $first_name . PHP_EOL . '
@@ -248,7 +248,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         Comments: ' . $comments . PHP_EOL . '
         Phone: ' . $phone . PHP_EOL;
 
-        $headers = "From: noreply@melkam2490.com\r\n";
+        $headers = "From: noreply@mszemeo@mystudentswa.com\r\n";
 
         mail($to, $subject, $body, $headers);
         header('Location:thx.php');
