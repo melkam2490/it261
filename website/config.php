@@ -48,7 +48,7 @@ switch(THIS_PAGE) {
             if (THIS_PAGE == $key) {
               $myreturn .= '<li><a style="color:red" href="'.$key.'"> '.$value.'</a></li>';
             } else {
-              $myreturn .= '<li><a style="color:green" href="'.$key.'"> '.$value.'</a></li>';
+              $myreturn .= '<li><a style="color:white" href="'.$key.'"> '.$value.'</a></li>';
             }
           }
           return $myreturn;
@@ -255,4 +255,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
       
     }
 }
+
+
+// picture php
+
+
+
 ?>

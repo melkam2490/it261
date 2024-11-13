@@ -79,7 +79,8 @@ h1 {
       
       <!-- Right-side image (type 2) -->
       <td class="right">
-        <img src="images/<?php echo substr($images['pic2'], 0, 4); ?>.jpg" alt="<?php echo str_replace('_', ' ', $name); ?>" width="400" height="400">
+        <img class="pic"src="images/<?php echo substr($images['pic2'], 0, 4); ?>.jpg" alt="<?php echo str_replace('_', ' ', $name); ?>  
+          ">
       </td>
     </tr>
 <?php endforeach; ?>

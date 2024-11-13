@@ -245,4 +245,37 @@ textarea{
   margin-bottom: 8px;
 }
 
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+td {
+  padding: 15px;
+  border: 1px solid greenyellow;
+  text-align: center;
+  margin-right: 5px;
+ margin-left: 15px;
+}
+
+.description {
+  max-width: 300px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  word-wrap: break-word;
+}
+.name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+.pic{
+  width: 20px;
+            height: 10px;
+        
+        }
+
+
 
