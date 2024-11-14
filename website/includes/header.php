@@ -8,7 +8,7 @@
 
     <!-- External Stylesheets -->
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <link href="css/picture.css" type="text/css" rel="stylesheet">
+   
 </head>
 
 <body class="<?php echo $body; ?>"> 

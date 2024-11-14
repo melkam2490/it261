@@ -1,7 +1,6 @@
 <?php
 echo date('Y');
 
-
 echo'<br>';
 echo '<h2>Time To our navagation that will again have both a key and a value!</h2>';
 $nav = array(

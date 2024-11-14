@@ -147,6 +147,7 @@ footer li {
 /* Image styling */
 img {
   max-width: 100%;
+
 }
 
 /* Typography styles */
@@ -252,7 +253,7 @@ table {
 }
 td {
   padding: 15px;
-  border: 1px solid greenyellow;
+  border: 1px solid darkblue;
   text-align: center;
   margin-right: 5px;
  margin-left: 15px;

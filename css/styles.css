@@ -16,6 +16,9 @@ body {
     max-width: 1200px;
     margin: 20px auto;
 }
+img{
+    max-width: 100%;
+  }
 
 /* Navigation */
 nav {

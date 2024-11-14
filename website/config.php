@@ -13,8 +13,8 @@ switch(THIS_PAGE) {
       $title = 'about page of my website project';
       $body = 'about inner';
       break;
- case 'dayily.php':
-    $title = 'daiyl page of my website project';
+ case 'daily.php':
+    $title = 'daily page of my website project';
     $body = 'daily inner';
     break;
 
@@ -28,9 +28,9 @@ switch(THIS_PAGE) {
         $body = 'contact inner';
         break;
 
-        case 'gallery.php':
-          $title = 'gallery page of my website project';
-          $body = 'gallery inner';
+        case 'gallary.php':
+          $title = 'gallary page of my website project';
+          $body = 'gallary inner';
 
           break;}
       
