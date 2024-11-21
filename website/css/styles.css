@@ -117,32 +117,30 @@ aside {
 }
 
 /* Footer */
+/* Footer */
 footer {
   height: 60px;
-  background: lightslategray;
-  line-height: 60px;
-  clear: both;
-    bottom: 0;
+ line-height: 60px;
+border-top: 1px solid #ddd;
+clear: both;
+position: fixed;
+bottom: 0;
+width: 100%;
 }
-   .footer{
-    height: 60px;
-    background: lightslategray;
-    line-height: 60px; 
-    clear: both;
-    position: relative; /* or fixed, depending on your layout needs */
-    bottom: 0;
-    width: 100%; 
-   }
+
 
 footer ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
+
 }
 
 footer li {
-  margin: 0 15px;
+  justify-content: center;
+  margin:0 15px;
 }
+
 
 /* Image styling */
 img {
