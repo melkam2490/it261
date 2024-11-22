@@ -43,19 +43,31 @@ switch(THIS_PAGE) {
         $body = 'contact inner';
         break;
 
+        case 'perfumes.php':
+          $title = 'perfumes page of my website project';
+          $body = 'perfumes inner';
+          break;
+  
+
         case 'gallary.php':
           $title = 'gallary page of my website project';
           $body = 'gallary inner';
 
-          break;}
+          break;
+          case 'gallary.php':
+            $title = 'database page of my website project';
+            $body = 'gallary inner';
+  
+            break;}
       
           $nav = array(
             'index.php' => 'Home',
             'about.php' => 'About',
             'daily.php' => 'Daily',
-            'project.php' => 'Project',
+            'perfumes.php' => 'Project',
             'contact.php' => 'Contact',
-            'gallary.php' => 'Galary',
+            'gallary.php' => 'Gallary',
+           'database.php'=>'Database',
         );
         function make_links($nav) {
           $myreturn = '';

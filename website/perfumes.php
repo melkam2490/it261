@@ -30,6 +30,7 @@ if (mysqli_num_rows($result) > 0) {
     echo '<li> Release Year:: ' . $row['launch_year'] . '</li>';
     echo '</ul>';
     echo '<p>For more information about brand perfumes ' . $row['name'] . ' ,Click <a href="project.php?id=' . $row['id'] . '"> here</a></p>';
+  
 }
 //end while loop
 } //end if statement
